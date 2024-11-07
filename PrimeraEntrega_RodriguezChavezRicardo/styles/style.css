@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@300&family=Noto+Sans+Symbols+2&family=Quicksand&family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mada', sans-serif;
+}
+
+.logoNav{
+    height: 120px;
+    width: 120px;
+    margin: 3px;
+}
+
+.logoTitulos{
+    height: 180px;
+    width: 180px;
+    margin: 3px;
+}
+
+
+.nav-link:hover{
+    color: #03618a !important;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+.divPrincipal{
+    height: 100%;
+    width: 100%;
+}
+
+.divPrincipalCentral{
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.divGaleriaMitos{
+
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+
+
+}
+
+.mito{
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    align-items: center;
+
+}
+
+.mito img{
+    grid-column: 1;
+    width: 100%;
+    max-width: 250px; 
+    height: auto;
+    justify-self: center;
+}
+
+.mito p {
+    grid-column: 2;
+}
+
+.imgBanner{
+    width: 1000px;
+    height: 350px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+    padding-top: 60px;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    color: #747474;
+    font-size: 18px;
+
+}
+
+.TitulosPD{
+    color: #747474;
+    font-size: 50px;
+}
+
+.divVarios{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.divConocenos{
+    width: 1000px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.divTextoInicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.divTitulo{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgDCentral{
+    height: 250px;
+    width: 250px;
+}
+
+.imgDCentralConocenos{
+    height: 80px;
+    width: 80px;
+}
+
+.imgIconoRedes{
+    height: 40px;
+    width: 40px;
+    padding-top: 5px;
+}
+
+.MitolopediaTitulo{
+    color: #0097B2;
+}
+
+.MitolopediaTituloMorado{
+    color: #fefaff;
+    width: auto;
+    background-color: #CB6CE6 ;
+}
+
+.MitolopediaTituloVerde{
+    color: #fefaff;
+    width: auto;
+    background-color: #00BF62;
+}
+
+.MitolopediaTituloRojo{
+    color: #fefaff;
+    width: auto;
+    background-color: #FF3131;
+}
+
+.TituloMCG{
+    font-size: 25px;
+   text-align: center;
+}
+
+
+.TitulosCaja{
+    font-size: 30px;
+    color: #000000;
+}
+
+footer{
+    background-color: #DEDEDE;
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+
+.centrarCarrusel {
+    max-width: 90vh; /* Cambia este valor según el ancho que desees */
+    margin: 0 auto; /* Centra el carrusel */
+}
+
+.centrarCarrusel .carousel-item img {
+    width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+@media (max-width: 768px){
+
+    .divVarios{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logoTitulos{
+        height: 80px;
+        width: 80px;
+
+    }
+
+
+    .TitulosPD{
+        color: #747474;
+        font-size: 30px;
+    }
+
+    .divConocenos{
+        width: 1000px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgDCentral{
+        height: 150px;
+        width: 150px;
+        display: block;
+        margin: 0 auto; 
+    }
+
+    p{
+        padding: 5px;
+    }
+
+    .divGaleriaMitos{
+
+        display: flex;
+        flex-direction: column; 
+        gap: 5px;
+    
+    
+    }
+    
+    .mito{
+    
+        display: grid;
+        grid-template-columns: 3fr;
+        grid-auto-rows: auto;
+        grid-gap: 10px;
+        align-items: center;
+    
+    }
+    
+    .mito img{
+        grid-column: 1;
+        width: 100%;
+        max-width: 250px; 
+        height: auto;
+        justify-self: center;
+    }
+    
+    .mito p {
+        grid-column: 1;
+    }
+
+}
